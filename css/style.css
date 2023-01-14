@@ -1,0 +1,656 @@
+* {
+    margin: o;
+    padding: 0;
+}
+
+/*start main1*/
+.main1 {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+.main1 .nav {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(175deg, black 70%, white);
+    overflow: auto;
+}
+
+.main1 .nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main1 .nav ul li a {
+    text-decoration: none;
+
+}
+
+.main1 .nav ul .left {
+    float: left;
+    color: blue;
+    margin: 10px 10px;
+
+}
+
+.main1 .nav ul .left a {
+    font-size: 20px;
+}
+
+.main1 .nav .right {
+    float: right;
+    color: antiquewhite;
+    margin: 10px 10px;
+}
+
+.main1 .nav .right button {
+    background-color: transparent;
+    border-width: 3px;
+    border-color: brown;
+    padding: 10px 20px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.main1 .slider {
+    width: 100%;
+    height: 88vh;
+    background-color: red;
+    background-image: url(../img/1555051295_prw.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation-name: changebackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* changebackground slider */
+@keyframes changebackground {
+
+    25% {
+        background-image: url(../img/15578bade17dcc3.jpg);
+
+    }
+
+    50% {
+
+        background-image: url(../img/flower-hedge-isolated-white-background-png-file-transparent-also-available-garden-design-flowering-shrub-green-plants-160381884.jpg);
+
+    }
+
+    75% {
+        background-image: url(../img/pngtree-colorful-abstract-faceted-crystallized-background-picture-image_1405724.jpg);
+
+    }
+
+
+
+}
+
+
+
+/*tablet media*/
+@media(max-width:768px) {
+
+    .main1 .nav ul .left a {
+        font-size: 18px;
+    }
+
+    .main1 .nav .right button {
+        border-width: 3px;
+        padding: 6px 14px;
+        font-size: 20px;
+
+    }
+
+}
+
+/* media for mobile */
+@media(max-width:425px) {
+    .main1 .nav ul {
+
+        font-size: 11px;
+    }
+
+    .main1 .nav .right button {
+        border-width: 3px;
+        padding: 2px 2px;
+        font-size: 14px;
+    }
+
+    .main1 .nav ul .left a {
+        font-size: 12px;
+    }
+
+    .main1 .nav ul .left {
+        float: left;
+        color: blue;
+        margin: 8px 5px;
+    }
+
+    .main1 .slider {
+        width: 100%;
+        height: 92vh;
+    }
+}
+
+/* end media main1 */
+/* start main2 */
+.main2 {
+    width: 100%;
+    height: 101vh;
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 1px;
+}
+
+.main2 .about {
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.main2 .line1 {
+    width: 40%;
+    height: 6px;
+    background-image: linear-gradient(rgb(176, 64, 146), white 10%, rgb(176, 64, 146));
+    border-radius: 50%;
+    margin: auto;
+}
+
+.main2 .line2 {
+    width: 30%;
+    height: 6px;
+    border-bottom: blueviolet dashed;
+    margin: 10px auto;
+
+}
+
+.main2 .line3 {
+    width: 20%;
+    height: 6px;
+    border-bottom: blueviolet dashed;
+    margin: 10px auto;
+
+}
+.main2 .content{
+   /* background-color: blue;  */
+   width:100%;
+   height: 80%;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.main2 .content .pgright {
+    width: 30%;
+     height:100%;
+     /* background-color: green; */
+
+}
+.main2 .content .pgright  img{
+    width: 100%;
+     height:77%;
+margin: auto;
+}
+.main2 .content .contleft {
+width: 70%;
+height: 100%;
+/* background-color: red; */
+}
+.main2 .content .contleft .itemleft {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+
+.main2 .content .contleft .itemleft h2{
+    font-weight: bold;
+    font-size: 45px;
+color:blueviolet;
+padding:5px 5px;
+
+}
+ .main2 .content .contleft .itemleft p{
+color: white;
+font-size: 25px;
+padding: 5px 5px;
+
+}
+/* end main2 */
+/* start media main2 */
+/* taplet media main2 */
+@media(max-width:768px) {
+    .main2 {
+        height: 257vh;
+        margin-top: 29px;
+    }
+
+    .main2 .content .pgright {
+        width: 87%;
+        margin: auto;
+    }
+    
+    .main2 .content {
+        /* background-color: blue; */
+        width: 100%;
+        height: 35%;
+    }
+    .main2 .content .contleft {
+    margin: auto;
+        height: 118%;
+    }
+.main2 .content .contleft .itemleft h2 {
+    
+    padding: 5px 5px;
+}
+    .main2 .content .contleft .itemleft p {
+        padding: -3px 0px;
+    }
+}
+/* mbile main2 */
+@media(max-width:425px){
+
+    main2 {
+        height: 217vh;
+    }
+
+    .main2 .content .contleft .itemleft p {
+        font-size: 16px;
+
+    }
+        .main2 .content .contleft .itemleft h2 {
+            font-weight: bold;
+            font-size: 41px;
+
+        }
+}
+/* end media main2 */
+/* start man3 */
+.main3{
+width:100%;
+height:102vh;
+background-color: black;
+margin-top: 50px;
+padding-top: 1px;
+
+}
+.main3 .Gallary {
+    color: blueviolet;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.main3 .line1 {
+    width: 40%;
+    height: 6px;
+    background-image: linear-gradient(rgb(176, 64, 146), white 10%, rgb(176, 64, 146));
+    border-radius: 50%;
+    margin: auto;
+}
+
+.main3 .line2 {
+    width: 30%;
+    height: 6px;
+    border-bottom: blueviolet dashed;
+    margin: 10px auto;
+
+}
+
+.main3 .line3 {
+    width: 20%;
+    height: 6px;
+    border-bottom: blueviolet dashed;
+    margin: 10px auto;
+
+}
+.main3 .nav{
+width:60%;
+height: 7%;
+border-bottom:4px solid palevioletred ;
+/* background-color: blue; */
+margin: auto;
+padding-top: 20px;
+
+}
+.main3 .nav ul{
+display: flex;
+list-style-type: none;
+justify-content: space-around;
+}
+.main3 .nav ul li {
+background-color: brown;
+font-size: 30px;
+font-weight: bold;
+border-radius: 5px;
+padding: 5px 5px;
+
+}
+.main3 .pic{
+
+    width:70%;
+    height: 77vh;
+    /* background-color: blue; */
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+.main3 .pic .pic1{
+width:30%;
+height:30%;
+
+}
+.main3 .pic .pic1 img{
+width:100%;
+height:100%;
+border-radius: 30px;
+
+}
+/* .main3 .pic .pic2{
+    width:100%;
+    height:48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    padding-top: 10px;
+    
+    }
+    .main3 .pic .pic2 img{
+    width:30%;
+    height:100%;
+    border-radius: 30px;
+} */
+/* media main3 */
+/* taplet madiastart */
+@media(max-width:768px){
+    .main3 .nav ul li {
+        font-size: 20px;
+    }
+
+.main3 .pic .pic1 {
+    width: 45%;
+    height: 26%;
+
+}
+}
+/* mobile media main3 */
+@media(max-width:425px){
+
+
+.main3 .pic .pic1 {
+    width: 85%;
+    height: 29%;
+    margin:10px ;
+}
+
+.main3 {
+    width: 100%;
+    height: 189vh;
+
+}
+}
+/* end mobile media main3 */
+/*  stat main4 */
+.main4{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    margin-top: 50px;
+    padding-top: 1px;
+    }
+    .main4 h1{
+        color: blueviolet;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin: 10px auto;
+    }
+    
+    .main4 .line1 {
+        width: 40%;
+        height: 6px;
+        background-image: linear-gradient(rgb(176, 64, 146), white 10%, rgb(176, 64, 146));
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+    .main4 .line2 {
+        width: 30%;
+        height: 6px;
+        border-bottom: blueviolet dashed;
+        margin: 10px auto;
+    
+    }
+    
+    .main4 .line3 {
+        width: 20%;
+        height: 6px;
+        border-bottom: blueviolet dashed;
+        margin: 10px auto;
+    
+    }
+
+
+    .main4 .main4section2 { 
+        width: 100%;
+        height: 80%;
+        /* background-color: blue; */
+        display: flex;
+        flex-wrap: wrap;
+        padding:1px 0px;
+
+    }
+    .main4 .main4section2 .right {
+        width: 50%;
+        height:100%;
+        /* background-color: red; */
+        display: flex; 
+      flex-wrap: wrap;
+    }
+    .main4 .main4section2 .right h1 {
+font-size:30px ;
+font-weight: bold;
+text-align: center;
+color: blueviolet;
+
+    }
+
+    .main4 .main4section2 .right .label1 {
+        width: 95%;
+        height: 20%;
+        /* background-color: yellow; */
+      margin: auto; 
+      display: flex; 
+      flex-wrap: wrap;
+    }
+
+    .main4 .main4section2 .right .label1 .Email {
+        width: 48%;
+        height: 100%;
+         margin: auto;  
+  }
+  .main4 .main4section2 .right .label1 .Email input {
+    
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 10px;
+ }
+
+
+  .main4 .main4section2 .right .label1 .Email  h4{
+text-align: center;
+color:white;
+ }
+    .main4 .main4section2 .right .label1 .Password {
+        width: 48%;
+        height: 100%;
+        margin: auto;  
+
+    }
+    .main4 .main4section2 .right .label1 .Password  h4{
+        text-align: center;
+        color:white;
+         }
+
+         .main4 .main4section2 .right .label1 .Password input {
+            border-radius: 10px;
+
+            width: 90%;
+            padding: 10px 10px;
+            
+             }
+             .main4 .main4section2 .right  .Address {
+                width: 98%;
+                height: 30%;
+                margin: auto;  
+        
+            }  
+            .main4 .main4section2 .right  .Address input {
+    
+                width: 90%;
+                padding: 10px 10px;
+                border-radius: 10px;
+             }
+
+             .main4 .main4section2 .right  .Address  h4{
+                text-align: center;
+                color:white;
+                 }
+        
+                 .main4 .main4section2 .right .label1 .zip {
+                    width: 25%;
+                    height: 100%;
+                     margin: auto;  
+              }
+
+              .main4 .main4section2 .right .label1 .zip input {
+    
+                width: 90%;
+                padding: 10px 10px;
+                border-radius: 10px;
+             }
+            
+            
+              .main4 .main4section2 .right .label1 .zip  h4{
+            text-align: center;
+            color:white;
+             }
+    .main4 .main4section2 .map {
+        width :48%;
+        height:100%;
+        /* background-color:green; */
+    }
+    .main4 .main4section2 .map  iframe{
+        width :100%;
+        height:100%;
+    }
+
+
+/*tablet media main4*/
+@media(max-width:768px) {
+    .main4{
+        height: 115vh;
+    }  
+    
+    .main4 .main4section2 .right .label1 {
+        width: 95%;
+        height:30vh;
+    } 
+    .main4 .main4section2 .right .label1 .Email {
+        width: 101%;
+        height: 50%;
+    } 
+    .main4 .main4section2 .right .label1 .Password {
+        width: 101%;
+        height: 50%;
+    } 
+
+
+    } 
+    /* media for mobile */
+    @media(max-width:425px){
+    .main4{
+        height: 250vh;
+    }
+        .main4 .main4section2 .right {
+            width: 100%;
+            height: 50%;
+        }
+    
+    
+        .main4 .main4section2 .map {
+            width :100%;
+         height: 60%;
+         margin-top: 30px;
+        } 
+    } 
+
+
+    .footer{
+width: 100%;
+height: 50vh;
+background-color: black;
+display: flex;
+flex-wrap: wrap;
+
+margin-top: 50px;
+padding-top: 1px;
+
+ }
+
+    .footer .p{
+        width:50%;
+        height: 100%; 
+        margin-left: 30px;
+    }
+
+    .footer .p h1{
+        color: white;
+        font-size: 30px;
+    }
+    .footer .p  p{
+        color: white;
+        font-size: 20px;
+    }
+.footer .list1{
+    width: 25%;
+    height:100%
+}
+.footer .list1 h1{
+    color: white;
+    font-size: 30px;
+}
+.footer .list1 ul li{
+
+   color: white; 
+   font-size: 20px;
+}
+
+
+
+
+    @media(max-width:425px){
+        .footer .p {
+            width: 88%;
+            height: 51%;
+        }
+        .footer .list1 {
+            width: 50%;
+        
+        }
+        .footer .list1 h1 {
+            color: white;
+            font-size: 25px;
+
+    }
+}
+ 
